@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body>
+    <h1>Membuat Table</h1>
+    <!-- 
+        format :
+        <table> 
+            <tr>
+                <td>Konten </td>
+            </tr>
+        </table>
+
+        tr ==> membuat baris ==> ke bawah
+        td ==> membuat kolom ==? ke samping kanan
+
+        gabung baris (ke bawah) ==> rowspan
+        gabung kolom (ke samping) ==> colspan
+    -->
+    <table border="1" cellspacing="0" cellpading="0">
+        <!-- baris pertama -->
+        <tr>
+            <td rowspan="2">no</td>
+            <td colspan="2">nama</td>
+            <td rowspan="2">alamat</td>
+        </tr>
+
+        <!-- baris Kedua -->
+        <tr>
+            <td>Depan</td>
+            <td>Belakang</td>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>muhhamad</td>
+            <td>muhhamad</td>
+            <td>jakarta</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>irfan</td>
+            <td>muhhamad</td>
+            <td>palembang</td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>duma</td>
+            <td>muhhamad</td>
+            <td>yogyakarta</td>
+        </tr>
+    </table>
+</body>
+</html>

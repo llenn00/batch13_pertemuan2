@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir</title>
+</head>
+<body>
+    <h1>Formulir Pendaftaran</h1>
+
+    <form>
+        <label for="nama">Nama</label>
+        <input type="text" name="nama" id="nama"> <br />
+        
+        <label for="tanggal_lahir">Tanggal Lahir</label>
+        <input type="date" name="tanggal_lahir" id="tanggal_lahir"> <br />
+        
+        <label for="kewarganegaraan">Kewarganegaraan</label>
+        <select name="kewarganegaraan" id="kewarganegaraan">
+            <option value="" disabled selected >- Pilih kewarganegaraan-</option>
+            <option value="indonesia">Indonesia</option>
+            <option value="indonesia">Indonesia</option>
+            <option value="indonesia">Indonesia</option>
+            <option value="indonesia">Indonesia</option>
+        </select>
+
+        <label for="jumlah_anggota_keluarga">Jumlah Anggota Keluarga:</label>
+        <input type="number" placeholder="Jumlah Keluarga" name="jumlah_keluarga">
+
+        <label for="alamat" style="vertical-align: top;">Alamat:</label>
+        <textarea name="alamat" id="alamat" cols="30" rows="10"></textarea><br />
+
+
+        <label for="jenis_kelamin">Jenis Kelamin:</label>
+        <input type="radio" name="jenis_kelamin" value="laki-laki">laki-laki <br />
+        <input type="radio" name="jenis_kelamin" value="perempuan">perempuan <br />
+
+        <label for="pelatihan">Pelatihan yang diikuti:</label>
+        <input type="checkbox" name="pelatihan[]" value="Pelatihan HTML">Pelatihan HTML <br />
+        <input type="checkbox" name="pelatihan[]" value="Pelatihan JAVA">Pelatihan JAVA <br />
+        <input type="checkbox" name="pelatihan[]" value="Pelatihan Python">Pelatihan Python <br />
+        <input type="checkbox" name="pelatihan[]" value="Pelatihan CSS">Pelatihan CSS <br />
+        <input type="checkbox" name="pelatihan[]" value="Pelatihan C++">Pelatihan C++ <br />
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email"> <br /><br />
+
+        <label for="foto">Foto:</label>
+        <input type="file" name="foto" id="foto" accept="image/*"> <br /><br />
+
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+    </form>
+</body>
+</html>
